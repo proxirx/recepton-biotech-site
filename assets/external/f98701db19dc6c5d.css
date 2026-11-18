@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bea67e444f3a0d33.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("44c915642351a061.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("d210f430bc888ad0.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("c7eb7572b9e3e893.ttf") format('truetype');
+}

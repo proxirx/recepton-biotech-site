@@ -1,0 +1,4 @@
+sources/pages/
+output/
+.playwright-cli/
+.DS_Store
