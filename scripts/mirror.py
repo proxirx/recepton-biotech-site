@@ -18,6 +18,9 @@ ORIGIN = 'https://www.receptonbiotech.com/'
 HOSTS = {'www.receptonbiotech.com', 'receptonbiotech.com'}
 CSS_URL = re.compile(r'url\(\s*[\"\']?([^\"\'\)]+)[\"\']?\s*\)')
 ABS_URL = re.compile(r'(?:https?:)?//(?:www\.)?receptonbiotech\.com/[^\s<>\"\'\\)]+')
+DOWNLOAD_SUFFIXES = {'.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.zip', '.csv', '.txt'}
+PRESENTATION_SUFFIXES = DOWNLOAD_SUFFIXES | {'.css', '.js', '.otf', '.ttf', '.woff', '.woff2', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.mp4', '.webm'}
+SITEMAP_INDEX = ORIGIN + 'wp-sitemap.xml'
 assets, pages, failures = {}, {}, []
 
 def canonical(url):
@@ -33,7 +36,7 @@ def internal(url):
 
 def page_candidate(url):
     p = urlsplit(url)
-    return internal(url) and not p.path.startswith(('/wp-', '/feed', '/comments', '/author/', '/tag/', '/category/', '/cdn-cgi/')) and not re.search(r'\.[a-z0-9]{2,5}$', p.path, re.I) and (not p.query or p.query == 's=')
+    return internal(url) and not p.path.startswith(('/wp-', '/feed', '/comments', '/cdn-cgi/')) and not re.search(r'\.[a-z0-9]{2,5}$', p.path, re.I) and (not p.query or p.query == 's=')
 
 def page_path(url):
     p = urlsplit(url)
@@ -70,12 +73,23 @@ def register_asset(raw, base):
     if urlsplit(url).scheme not in ('http', 'https'):
         return
     p = urlsplit(url)
-    if internal(url) and (not p.path.startswith(('/wp-content/', '/wp-includes/')) or not Path(p.path).suffix):
+    wp_path = p.path.startswith(('/wp-content/', '/wp-includes/'))
+    if internal(url) and ((not wp_path and Path(p.path).suffix.lower() not in PRESENTATION_SUFFIXES) or (wp_path and not Path(p.path).suffix)):
         return
     if not internal(url) and p.hostname not in ('fonts.googleapis.com', 'fonts.gstatic.com'):
         return
     key = canonical(url) if internal(url) else url
-    assets.setdefault(key, {'url': url, 'path': str(asset_path(key))})
+    path = asset_path(key)
+    if not internal(url):
+        existing = ROOT / 'assets/external' / Path(p.path).name
+        if existing.is_file():
+            path = existing.relative_to(ROOT)
+    assets.setdefault(key, {'url': url, 'path': str(path)})
+
+def register_download(raw, base):
+    url = urljoin(base, html.unescape(raw.strip()))
+    if urlsplit(url).scheme in ('http', 'https') and urlsplit(url).path.lower().endswith(tuple(DOWNLOAD_SUFFIXES)):
+        register_asset(url, base)
 
 def collect_assets(soup, base):
     for tag in soup.find_all(True):
@@ -83,6 +97,13 @@ def collect_assets(soup, base):
             if tag.has_attr(attr): register_asset(tag[attr], base)
         if tag.name == 'link' and ('stylesheet' in tag.get('rel', []) or 'icon' in ' '.join(tag.get('rel', []))):
             register_asset(tag.get('href', ''), base)
+        if tag.name == 'a' and tag.has_attr('href'):
+            register_download(tag['href'], base)
+        if tag.name == 'meta' and tag.has_attr('content') and (
+            tag.get('property', '').lower() == 'og:image' or
+            tag.get('name', '').lower() == 'msapplication-tileimage'
+        ):
+            register_asset(tag['content'], base)
         for item in tag.get('srcset', '').split(','):
             if item.strip(): register_asset(item.strip().split()[0], base)
         for match in CSS_URL.finditer(tag.get('style', '')):
@@ -100,24 +121,61 @@ def local_url(raw, base, current):
     url = urljoin(base, html.unescape(raw))
     key = canonical(url)
     fragment = urlsplit(url).fragment
-    if key in pages:
-        path = pages[key]['path']
+    query = urlsplit(url).query
+    page_key = key
+    if query and urlsplit(url).hostname in HOSTS:
+        query_params = parse_qs(query, keep_blank_values=True)
+        if 's' in query_params:
+            page_key = canonical(ORIGIN + '?s=')
+        else:
+            page_key = canonical(urlunsplit((urlsplit(url).scheme, urlsplit(url).netloc, urlsplit(url).path, '', '')))
+    if page_key in pages:
+        path = pages[page_key]['path']
         result = relative(Path(path).parent, current) + '/'
     elif key in assets and assets[key].get('saved'):
         result = relative(Path(assets[key]['path']), current)
     else:
         return raw
+    if query and page_key in pages:
+        result += '?' + query
     return result + ('#' + fragment if fragment else '')
 
 def rewrite_text(text, base, current):
     text = CSS_URL.sub(lambda m: m[0].replace(m[1], local_url(m[1].strip(), base, current), 1), text)
     return ABS_URL.sub(lambda m: local_url(m[0], base, current), text)
 
+def sitemap_urls():
+    """Capture live sitemap XML as provenance and return all listed URLs."""
+    found = []
+    try:
+        response = requests.get(SITEMAP_INDEX, timeout=45, headers={'User-Agent': 'Mozilla/5.0 ReceptonStaticMirror/1.0'})
+        response.raise_for_status()
+        sitemap_dir = ROOT / 'sources/sitemaps'
+        sitemap_dir.mkdir(parents=True, exist_ok=True)
+        (sitemap_dir / 'wp-sitemap.xml').write_bytes(response.content)
+        index = BeautifulSoup(response.content, 'xml')
+        for node in index.find_all('loc'):
+            child = node.get_text(strip=True)
+            try:
+                child_response = requests.get(child, timeout=45, headers={'User-Agent': 'Mozilla/5.0 ReceptonStaticMirror/1.0'})
+                child_response.raise_for_status()
+                (sitemap_dir / (Path(urlsplit(child).path).name or 'sitemap.xml')).write_bytes(child_response.content)
+                child_xml = BeautifulSoup(child_response.content, 'xml')
+                found.extend(loc.get_text(strip=True) for loc in child_xml.find_all('loc'))
+            except requests.RequestException as exc:
+                failures.append({'url': child, 'error': str(exc)})
+    except requests.RequestException as exc:
+        failures.append({'url': SITEMAP_INDEX, 'error': str(exc)})
+    return found
+
 pending = {ORIGIN, ORIGIN + 'proteins/', ORIGIN + '?s='}
 if '--localize' in sys.argv:
     manifest = json.loads((ROOT / 'sources/manifest.json').read_text())
     pages, assets = manifest['pages'], manifest['assets']
+    failures = manifest.get('failures', [])
     pending = set()
+else:
+    pending.update(sitemap_urls())
 while pending:
     batch = sorted({canonical(u) for u in pending} - pages.keys())
     pending = set()
@@ -146,10 +204,12 @@ while True:
     with cf.ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(fetch, [v['url'] for _, v in batch]))
     for (key, record), (data, content_type) in zip(batch, results):
+        target = ROOT / record['path']
+        if data is None and target.is_file():
+            data, content_type = target.read_bytes(), 'cached'
         record['saved'] = data is not None
         if data is None:
             failures.append({'url': record['url'], 'error': content_type}); continue
-        target = ROOT / record['path']
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
         if target.suffix.lower() == '.css':
@@ -190,6 +250,15 @@ for url, record in pages.items():
     source = re.sub(attr_pattern, lambda m: m[1] + '=' + m[2] + local_url(m[3], url, current) + m[2], source, flags=re.I)
     source = re.sub(r'\bsrcset=([\"\'])(.*?)\1', lambda m: 'srcset=' + m[1] + ', '.join(' '.join([local_url(part.strip().split()[0], url, current)] + part.strip().split()[1:]) for part in m[2].split(',') if part.strip()) + m[1], source, flags=re.I)
     source = re.sub(r'<form\b[^>]*>', lambda m: re.sub(r'\s(?:action|onsubmit)=([\"\']).*?\1', '', m[0])[:-1] + ' action="#" data-static-form>', source, flags=re.I)
+    if url.rstrip('/').endswith('/order_confirmation'):
+        source = source.replace('Order confirmation', 'Order request')
+        source = re.sub(r'We(?:’|&#8217;|&#x2019;)ve received your order and will contact you as soon as possible\. We sent you copy order information on your email\.',
+                        'Your request is ready to prepare. Open the order form, review your details, then send the request using your email app.',
+                        source)
+        source = source.replace('Back to home', 'Open order form')
+        source = re.sub(r'(<a\b[^>]*class=[\"\'][^\"\']*vc_btn3[^\"\']*[\"\'][^>]*href=)[\"\'][^\"\']*[\"\']',
+                        r'\1"../order/"', source, count=1, flags=re.I)
+        source = source.replace('</h3>', '</h3><p style="text-align: center;">Nothing is sent automatically from this website.</p>', 1)
     runtime = '<script src="' + relative(Path('assets/static.js'), current) + '"></script>'
     source = source.replace('</body>', runtime + '\n</body>')
     target = ROOT / current

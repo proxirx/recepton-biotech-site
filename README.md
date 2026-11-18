@@ -1,27 +1,41 @@
 # Recepton Biotech static website
 
-Static copy of https://www.receptonbiotech.com/, captured November 18, 2026. Original page markup, responsive styles, images, fonts, product information, and browser interactions are retained wherever available.
+GitHub Pages version of https://www.receptonbiotech.com/, captured November 18–19, 2026. The 140 captured pages retain the original markup, responsive styles, images, fonts, and product information. The copy includes older company/service pages, article tags, categories, and author archives.
 
-## Preview
+## Preview and publish
 
 Run `python3 -m http.server 8000`, then visit http://localhost:8000.
 
-## GitHub Pages
+Publish from the `main` branch, repository root. `.nojekyll` preserves the original asset directories. Page links, search results, and runtime modules support a GitHub Pages project URL. No build server, account registration, API key, or paid service is required for visitors.
 
-Publish from the `main` branch, repository root. `.nojekyll` preserves the original asset directories. Navigation and presentation assets use relative URLs and work under a project repository URL.
+## Working features
 
-## Working static controls
+- Product search, catalog-number/alphabetical sorting, tag/expression-host/origin filters, and Clear filters. Query parameters preserve selections across reloads.
+- Full-text search across the captured site, with product/article/page scopes. Article search includes body text and verified tags; archive and tag navigation stays local.
+- Product-table Order buttons preselect the catalog entry. Entries missing from the old order dropdown remain available as requests for confirmation.
+- Three-step order form with Back/Next, up to four products, removable extra products, required fields, and positive whole-number quantities.
+- Contact and order request review, correctly encoded email drafts addressed to `office@receptonbiotech.com`, clipboard copy, and downloadable UTF-8 text files. Visitors send the prepared request from their own email app. No automatic delivery or false success confirmation.
+- Optional Save/Load/Delete draft buttons. Personal details are stored in this browser's local storage only when Save is clicked. Deleting a saved draft leaves the current form intact.
+- Responsive navigation, catalog filters, request controls, and site search on mobile.
 
-- Product search, catalog-number/alphabetical sorting, and tag, expression-host, and origin filters run in the browser. Selections survive reloads through URL query parameters.
-- Article and archive search matches displayed titles and summaries. Search and catalog controls are available on mobile.
-- The order form supports all three steps, Back/Next navigation, up to four products, required-field validation, and positive whole-number quantities. Values remain in the form when navigating between steps.
+## Limits
 
-## Deferred server features
+GitHub Pages does not run the original WordPress backend. This copy cannot automatically send mail, process payments, store orders centrally, provide WordPress administration, or synchronize content changes from the original site. Email delivery requires the visitor to send the draft; copy/download remains available when an email app cannot open or truncates a long draft.
 
-Contact, quote, and order submissions remain disconnected. No orders, messages, or payments are sent; the final submission shows a local notice. Article tag links still lead to the original website. Server-backed login and WordPress APIs are not included.
+Six assets already return 404 on the original site: `neuropol.otf` and `Grafika1.jpg` through `Grafika5.jpg`. Their failed retrievals remain recorded in `sources/manifest.json`; the 1,130 available assets are stored locally. Some legacy pages therefore retain the original missing imagery/font fallbacks.
 
-## Capture
+## Rebuild and verify
 
-`sources/manifest.json` records original source URLs and retrieval results. `scripts/mirror.py` rebuilds the mirror using Python, `requests`, and `beautifulsoup4`. Capture sources and browser verification artifacts remain local and are excluded from Git.
+Capture tooling requires Python with `requests`, `beautifulsoup4`, and `lxml` installed. In the original development environment, use `/opt/anaconda3/bin/python`.
+
+```sh
+python scripts/mirror.py
+python scripts/build-search.py
+python scripts/verify.py
+```
+
+The mirror reuses cached source pages/assets. `python scripts/mirror.py --localize` rebuilds HTML from those cached originals without recapturing pages. Run `build-search.py` after content changes. Original source HTML stays in ignored `sources/pages/`; sitemap XML and capture results provide provenance.
+
+Verification checks local navigation/assets, safe form actions, runtime files, and search-index paths. Browser checks covered catalog filters/reset, full-text and tag searches, mobile navigation/layout, GitHub project-path URLs, required fields, product prefill, removable items, draft restoration/deletion, request previews, Unicode email bodies, and downloaded requests. Browser test artifacts remain in ignored `output/`.
 
 Original branding, content, and asset ownership remain with their respective owners.

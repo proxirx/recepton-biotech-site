@@ -1,5 +1,10 @@
 /* Restore browser-only controls while keeping server submissions disabled. */
 (() => {
+  const root = new URL('../', document.currentScript.src);
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = new URL('assets/static.css', root);
+  document.head.appendChild(css);
   const handlers = new WeakMap();
   const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
   const matches = (text, query) => normalize(query).split(' ').every(word => text.includes(word));
@@ -42,6 +47,13 @@
     const aliases = { his: 'histag', strep: 'streptag', ecoli: 'e-coli', hek: 'hek293', 'homo-sapiens': 'homo sapiens' };
     const status = notice(container, '');
     container.prepend(status);
+    form.elements.namedItem('full_product_name').setAttribute('aria-label', 'Search products');
+    form.elements.namedItem('sortBy').setAttribute('aria-label', 'Sort products');
+    const clear = document.createElement('button');
+    clear.type = 'reset';
+    clear.textContent = 'Clear filters';
+    clear.style.marginLeft = '10px';
+    form.appendChild(clear);
 
     function apply() {
       const data = new FormData(form);
@@ -76,42 +88,30 @@
     handlers.set(form, apply);
     form.addEventListener('input', apply);
     form.addEventListener('change', apply);
+    form.addEventListener('reset', () => queueMicrotask(apply));
     apply();
   }
 
-  function articleSearch(form) {
-    const cards = [...document.querySelectorAll('.post-container')];
-    if (!cards.length) return;
-    const input = form.elements.namedItem('s');
-    const status = notice(cards[0].parentElement, '');
-    const texts = cards.map(card => normalize(card.textContent));
-    input.value = new URLSearchParams(location.search).get('s') || '';
-    input.setAttribute('aria-label', 'Search articles');
-    function apply() {
-      let count = 0;
-      cards.forEach((card, index) => {
-        card.hidden = !matches(texts[index], input.value);
-        if (!card.hidden) count++;
-      });
-      status.textContent = count ? `${count} article${count === 1 ? '' : 's'} found.` : 'No articles match your search.';
-      const params = new URLSearchParams(location.search);
-      if (input.value) params.set('s', input.value);
-      else params.delete('s');
-      history.replaceState(null, '', `${location.pathname}${params.size ? '?' + params : ''}${location.hash}`);
-    }
-    handlers.set(form, apply);
-    input.addEventListener('input', apply);
-    apply();
-  }
-
-  function orderWizard(form) {
+  function orderWizard(form, requestTools) {
     const pages = [...form.querySelectorAll('.quform-element-page')];
     if (!pages.length) return;
     let current = 0;
     const options = JSON.parse(form.dataset.options);
     const logic = options.logic.logic;
-    const status = notice(form, 'Order submission is not available yet. You can fill out the form and move between steps.');
-    form.prepend(status);
+    const selected = new URLSearchParams(location.search).get('product');
+    const productField = form.elements.namedItem('quform_1_22');
+    if (selected) {
+      const option = [...productField.options].find(option => option.value === selected || option.value.startsWith(selected + ' '));
+      if (option) productField.value = option.value;
+      else {
+        productField.add(new Option(selected + ' (please confirm availability)', selected));
+        productField.value = selected;
+        notice(form, 'Selected catalog entry is not in the original order list. It will be included as a request for confirmation.');
+      }
+    }
+    const request = requestTools(form, true);
+    form.querySelector('.quform-submit').textContent = 'Review request';
+    for (const id of [32, 42, 50]) form.elements.namedItem(`quform_1_${id}`).type = 'checkbox';
     form.querySelectorAll('.quform-element-required .quform-field').forEach(field => { field.required = true; });
     for (const id of [30, 39, 49, 57]) {
       const quantity = form.elements.namedItem(`quform_1_${id}`);
@@ -155,8 +155,7 @@
           .find(field => !field.disabled && !field.checkValidity());
         if (invalid) { invalid.reportValidity(); return; }
         if (current === pages.length - 1) {
-          status.textContent = 'Order submission is not connected yet. No order has been sent.';
-          status.scrollIntoView({ block: 'center' });
+          request.preview();
           return;
         }
         current++;
@@ -165,27 +164,34 @@
       pages[current].querySelector('input:not([type=hidden]), select, textarea')?.focus();
     });
     form.addEventListener('change', conditions);
+    form.addEventListener('recepton:draft-loaded', () => { current = 0; show(); });
     conditions();
     show();
   }
 
-  function init() {
-    const style = document.createElement('style');
-    style.textContent = `
-      .single-search-result[hidden], .post-container[hidden], .quform-element[hidden] { display: none !important; }
-      @media (max-width: 1035px) {
-        .main-search-container { flex-direction: column !important; }
-        .main-search-container .filters-container {
-          display: block !important; width: 100%; min-width: 0; margin: 0 0 20px !important;
-          box-sizing: border-box;
-        }
-      }`;
-    document.head.appendChild(style);
+  async function init() {
+    const [{ requestTools }, search] = await Promise.all([
+      import(new URL('assets/requests.js', root)), import(new URL('assets/search.js', root))
+    ]);
     document.querySelectorAll('form[data-static-form]').forEach(form => {
       if (form.elements.namedItem('full_product_name')) catalog(form);
-      else if (form.elements.namedItem('s')) articleSearch(form);
-      else if (form.classList.contains('quform-form')) orderWizard(form);
+      else if (form.elements.namedItem('s')) handlers.set(form, search.setupArticleSearch(form));
+      else if (form.classList.contains('quform-form')) orderWizard(form, requestTools);
+      else {
+        const request = requestTools(form);
+        handlers.set(form, request.preview);
+        form.querySelectorAll('input[type=submit]').forEach(button => { button.value = 'Review message'; });
+      }
     });
+    document.querySelectorAll('td.btnOrder a').forEach(link => {
+      const row = link.closest('tr');
+      const product = row?.cells[0]?.textContent.trim();
+      if (!product) return;
+      const target = new URL('order/', root);
+      target.searchParams.set('product', product);
+      link.href = target;
+    });
+    search.setupSiteSearch();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
