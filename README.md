@@ -10,9 +10,15 @@ Run `python3 -m http.server 8000`, then visit http://localhost:8000.
 
 Publish from the `main` branch, repository root. `.nojekyll` preserves the original asset directories. Navigation and presentation assets use relative URLs and work under a project repository URL.
 
+## Working static controls
+
+- Product search, catalog-number/alphabetical sorting, and tag, expression-host, and origin filters run in the browser. Selections survive reloads through URL query parameters.
+- Article and archive search matches displayed titles and summaries. Search and catalog controls are available on mobile.
+- The order form supports all three steps, Back/Next navigation, up to four products, required-field validation, and positive whole-number quantities. Values remain in the form when navigating between steps.
+
 ## Deferred server features
 
-Contact, quote, order, search, and catalog-filter forms retain their appearance but do not submit to the original WordPress server. Submission shows a local notice. No orders, messages, or payments are sent. Server-backed login and WordPress APIs are not included.
+Contact, quote, and order submissions remain disconnected. No orders, messages, or payments are sent; the final submission shows a local notice. Article tag links still lead to the original website. Server-backed login and WordPress APIs are not included.
 
 ## Capture
 
