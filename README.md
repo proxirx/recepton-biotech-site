@@ -14,7 +14,7 @@ Publish from the `main` branch, repository root. `.nojekyll` preserves the origi
 - Full-text search across the captured site, with product/article/page scopes. Article search includes body text and verified tags; archive and tag navigation stays local.
 - Product-table Order buttons preselect the catalog entry. Entries missing from the old order dropdown remain available as requests for confirmation.
 - Three-step order form with Back/Next, up to four products, removable extra products, required fields, and positive whole-number quantities.
-- Contact and order request review, correctly encoded email drafts, clipboard copy, and downloadable UTF-8 text files. Without a Formspree endpoint, visitors send the request from their own email app; the default fallback inbox is `office@receptonbiotech.com`. Configuring Formspree adds explicit online sending after review.
+- Contact and order request review, correctly encoded email drafts, clipboard copy, and downloadable UTF-8 text files. Without a Formspree endpoint, visitors send the request from their own email app; the default fallback inbox is `contact@fusiomica.com`. Configuring Formspree adds explicit online sending after review.
 - Optional Save/Load/Delete draft buttons. Personal details are stored in this browser's local storage only when Save is clicked. Deleting a saved draft leaves the current form intact.
 - Responsive navigation, catalog filters, request controls, and site search on mobile.
 
