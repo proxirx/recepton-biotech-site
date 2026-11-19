@@ -18,9 +18,9 @@ Publish from the `main` branch, repository root. `.nojekyll` preserves the origi
 - Optional Save/Load/Delete draft buttons. Personal details are stored in this browser's local storage only when Save is clicked. Deleting a saved draft leaves the current form intact.
 - Responsive navigation, catalog filters, request controls, and site search on mobile.
 
-## Enable online submissions with Formspree
+## Online submissions with Formspree
 
-The integration is ready but remains disabled until an account-owned form endpoint is supplied. Existing email/copy/download controls work while the endpoint is empty.
+Contact and order requests use the account-owned Formspree form `Recepton website requests` (`xdegzvgr`), configured to notify `contact@fusiomica.com`. Formspree's Formshield spam filter is enabled; CAPTCHA is currently disabled. Existing email/copy/download controls remain available. To replace the receiving form:
 
 1. Create a Formspree form in your account and verify the receiving email address. Set the destination in Formspree's dashboard.
 2. In `assets/form-config.js`, set `endpoint` to the form's public `https://formspree.io/f/...` endpoint. Set `recipientEmail` to the same receiving inbox for the email fallback and on-page instructions. This public endpoint is not an API key; no secrets belong in this file.
