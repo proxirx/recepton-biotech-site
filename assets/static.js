@@ -131,7 +131,7 @@
         element.hidden = !visible;
         element.querySelectorAll('input, select').forEach(field => {
           field.disabled = !visible;
-          if (field.type !== 'radio') field.required = visible;
+          if (!['radio', 'checkbox'].includes(field.type)) field.required = visible;
         });
       });
     }

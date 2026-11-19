@@ -14,13 +14,29 @@ Publish from the `main` branch, repository root. `.nojekyll` preserves the origi
 - Full-text search across the captured site, with product/article/page scopes. Article search includes body text and verified tags; archive and tag navigation stays local.
 - Product-table Order buttons preselect the catalog entry. Entries missing from the old order dropdown remain available as requests for confirmation.
 - Three-step order form with Back/Next, up to four products, removable extra products, required fields, and positive whole-number quantities.
-- Contact and order request review, correctly encoded email drafts addressed to `office@receptonbiotech.com`, clipboard copy, and downloadable UTF-8 text files. Visitors send the prepared request from their own email app. No automatic delivery or false success confirmation.
+- Contact and order request review, correctly encoded email drafts, clipboard copy, and downloadable UTF-8 text files. Without a Formspree endpoint, visitors send the request from their own email app; the default fallback inbox is `office@receptonbiotech.com`. Configuring Formspree adds explicit online sending after review.
 - Optional Save/Load/Delete draft buttons. Personal details are stored in this browser's local storage only when Save is clicked. Deleting a saved draft leaves the current form intact.
 - Responsive navigation, catalog filters, request controls, and site search on mobile.
 
+## Enable online submissions with Formspree
+
+The integration is ready but remains disabled until an account-owned form endpoint is supplied. Existing email/copy/download controls work while the endpoint is empty.
+
+1. Create a Formspree form in your account and verify the receiving email address. Set the destination in Formspree's dashboard.
+2. In `assets/form-config.js`, set `endpoint` to the form's public `https://formspree.io/f/...` endpoint. Set `recipientEmail` to the same receiving inbox for the email fallback and on-page instructions. This public endpoint is not an API key; no secrets belong in this file.
+3. Commit and push. Both contact and order previews will show a **Send request** button. The payload includes one reply-to email, the complete reviewed message, and a contact/order type.
+
+Online submission disables controls while pending, prevents repeat sends of the same accepted request, and shows success only after Formspree accepts it. Validation errors, rate limits, and unconfirmed network failures preserve the form and fallback options. No automatic retry occurs. A honeypot is included. If the Formspree form requires CAPTCHA, its widget/token integration must also be configured before activation; this adapter does not bypass CAPTCHA.
+
+Notification delivery and submission limits are managed by Formspree. An accepted submission is not proof of inbox delivery. Transport tests use mocked responses and never send real email:
+
+```sh
+node --test tests/formspree.test.mjs
+```
+
 ## Limits
 
-GitHub Pages does not run the original WordPress backend. This copy cannot automatically send mail, process payments, store orders centrally, provide WordPress administration, or synchronize content changes from the original site. Email delivery requires the visitor to send the draft; copy/download remains available when an email app cannot open or truncates a long draft.
+GitHub Pages does not run the original WordPress backend. A configured Formspree endpoint handles online submissions and notifications externally. Without it, delivery requires the visitor to send the email draft. This copy does not process payments, provide WordPress administration, or synchronize content changes from the original site. Copy/download remains available if online sending or an email app fails.
 
 Six assets already return 404 on the original site: `neuropol.otf` and `Grafika1.jpg` through `Grafika5.jpg`. Their failed retrievals remain recorded in `sources/manifest.json`; the 1,130 available assets are stored locally. Some legacy pages therefore retain the original missing imagery/font fallbacks.
 

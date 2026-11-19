@@ -70,7 +70,8 @@ else:
             elif not (root / unquote(image.lstrip('/'))).exists():
                 errors.append(('assets/search-data.json', image, 'missing search entry image'))
 
-for runtime in ('assets/static.js', 'assets/requests.js', 'assets/search.js', 'assets/static.css'):
+for runtime in ('assets/static.js', 'assets/requests.js', 'assets/search.js', 'assets/static.css',
+                'assets/form-config.js', 'assets/formspree.js'):
     if not (root / runtime).exists():
         errors.append((runtime, 'file', 'missing static runtime dependency'))
 print(json.dumps({'pages': len(manifest['pages']), 'assets': len(manifest['assets']), 'references_checked': checked, 'errors': errors}, indent=2))

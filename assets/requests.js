@@ -1,5 +1,7 @@
-/* Local request preparation. Email delivery stays under the visitor's control. */
-const recipient = 'office@receptonbiotech.com';
+/* Review requests before explicit online submission or email/download fallback. */
+import { formConfig } from './form-config.js';
+import { submitRequest, validEndpoint } from './formspree.js';
+const recipient = formConfig.recipientEmail;
 const controls = form => [...form.querySelectorAll('input, select, textarea')]
   .filter(field => field.name && !['hidden', 'submit', 'button', 'file'].includes(field.type) && !field.classList.contains('quform-field-tree'));
 
@@ -19,9 +21,13 @@ function button(text, action) {
 }
 
 export function requestTools(form, order = false) {
+  const online = validEndpoint(formConfig.endpoint);
+  let sending = false;
+  const submitted = new Set();
   const intro = document.createElement('p');
   intro.className = 'static-form-intro';
-  intro.textContent = 'Prepare your request below, then send it using your email app. You can also copy or download it.';
+  intro.textContent = online ? 'Prepare and review your request, then send it online. Email, copy, and download options are also available.' :
+    'Prepare your request below, then send it using your email app. You can also copy or download it.';
   form.prepend(intro);
   const status = document.createElement('p');
   status.setAttribute('role', 'status');
@@ -31,6 +37,16 @@ export function requestTools(form, order = false) {
   form.append(draftBar, status);
   const key = `recepton-draft:${location.pathname}:${form.querySelector('[name="_wpcf7"]')?.value || 'order'}`;
   const fields = controls(form);
+  const trap = document.createElement('input');
+  trap.name = '_gotcha';
+  trap.type = 'text';
+  trap.tabIndex = -1;
+  trap.autocomplete = 'off';
+  trap.setAttribute('aria-label', 'Leave this field empty');
+  const trapContainer = document.createElement('div');
+  trapContainer.hidden = true;
+  trapContainer.append(trap);
+  form.append(trapContainer);
   fields.forEach(field => {
     if (field.getAttribute('aria-required') === 'true' || field.closest('.wpcf7-acceptance:not(.optional)')) field.required = true;
     if (!field.labels?.length) field.setAttribute('aria-label', label(field));
@@ -80,6 +96,7 @@ export function requestTools(form, order = false) {
   );
 
   function preview() {
+    if (sending) return false;
     const invalid = fields.find(field => !field.disabled && !field.checkValidity());
     if (invalid) { invalid.reportValidity(); return false; }
     if (!panel) {
@@ -94,7 +111,7 @@ export function requestTools(form, order = false) {
     const title = document.createElement('h3');
     title.textContent = order ? 'Review your order request' : 'Review your message';
     const help = document.createElement('p');
-    help.textContent = `Nothing has been sent. Email your request to ${recipient}. ${order ? 'Recepton will confirm availability and final pricing.' : ''}`;
+    help.textContent = `Nothing has been sent. ${online ? 'Send online using Formspree, or email' : 'Email'} your request to ${recipient}. ${order ? 'Recepton will confirm availability and final pricing.' : ''}`;
     const subject = order ? 'Recepton product order request' : 'Recepton contact enquiry';
     const lines = [subject, ''];
     let product = 0;
@@ -121,7 +138,50 @@ export function requestTools(form, order = false) {
     email.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const feedback = document.createElement('p');
     feedback.setAttribute('role', 'status');
-    email.addEventListener('click', () => {
+    if (online) {
+      const senderEmail = fields.find(field => field.type === 'email' && !field.disabled)?.value || '';
+      const senderName = order ? `${form.elements.quform_1_58.value} ${form.elements.quform_1_62.value}` : form.elements['first-name']?.value || '';
+      const send = button('Send request', async () => {
+        if (sending || submitted.has(body)) return;
+        sending = true;
+        send.disabled = true;
+        send.textContent = 'Sending…';
+        feedback.textContent = 'Sending your request…';
+        const frozen = [...fields, ...draftBar.querySelectorAll('button'), ...form.querySelectorAll('[type=submit]')].filter(field => !field.disabled);
+        frozen.forEach(field => { field.disabled = true; });
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000);
+        try {
+          const result = await submitRequest(formConfig.endpoint, {
+            email: senderEmail, name: senderName, subject, message: body,
+            kind: order ? 'order' : 'contact', source: `${location.origin}${location.pathname}`, honeypot: trap.value
+          }, controller.signal);
+          feedback.textContent = result.message;
+          if (result.ok) {
+            submitted.add(body);
+            help.textContent = 'Request submitted. Copy or download it below for your records.';
+            email.hidden = true;
+          }
+        } finally {
+          clearTimeout(timeout);
+          frozen.forEach(field => { field.disabled = false; });
+          sending = false;
+          send.disabled = submitted.has(body);
+          send.textContent = send.disabled ? 'Submitted' : 'Send request';
+        }
+      });
+      send.className = 'static-primary';
+      send.dataset.onlineSend = '';
+      if (submitted.has(body)) {
+        send.disabled = true;
+        send.textContent = 'Submitted';
+        email.hidden = true;
+        help.textContent = 'This request was already submitted. Keep a copy using the options below.';
+      }
+      actions.append(send);
+    }
+    email.addEventListener('click', event => {
+      if (sending || submitted.has(body)) { event.preventDefault(); return; }
       feedback.textContent = 'Send from your email app to finish. If it does not open or omits text, copy or download the request and email it manually.';
     });
     actions.append(email, button('Copy request', async () => {

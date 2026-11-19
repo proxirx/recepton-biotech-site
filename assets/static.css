@@ -1,4 +1,4 @@
-.single-search-result[hidden], .post-container[hidden], .quform-element[hidden], .static-request-preview[hidden] { display: none !important; }
+.single-search-result[hidden], .post-container[hidden], .quform-element[hidden], .static-request-preview[hidden], .static-actions a[hidden] { display: none !important; }
 .static-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
 .static-actions button, .static-actions a, .static-search-toggle, .static-search-close {
   border: 1px solid #2f3890; border-radius: 5px; padding: 9px 14px;
@@ -6,6 +6,7 @@
 }
 .static-actions .static-primary, .static-search-toggle { background: #2f3890; color: #fff; }
 .static-actions button:hover, .static-actions a:hover { background: #eef1dc; color: #20275e; }
+.static-actions button:disabled { opacity: 0.6; cursor: default; }
 .static-actions button:focus-visible, .static-actions a:focus-visible, .static-search-toggle:focus-visible { outline: 3px solid #a6d71c; outline-offset: 3px; }
 .static-form-intro { padding: 12px; background: #f2f5e9; color: #30343b; }
 .static-request-preview { border: 1px solid #d9dfcb; padding: 20px; margin-top: 24px; scroll-margin-top: 110px; background: #fafbf6; }
