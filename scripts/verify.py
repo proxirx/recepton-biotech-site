@@ -28,7 +28,8 @@ def check(value, source):
     elif not (root / source.parent / unquote(url.path)).exists():
         errors.append((str(source), value, 'missing file'))
 
-for record in manifest['pages'].values():
+pages = list(manifest['pages'].values()) + [{'path': 'basket/index.html'}, {'path': 'checkout/index.html'}]
+for record in pages:
     source = Path(record['path'])
     soup = BeautifulSoup((root / source).read_text(), 'html.parser')
     for tag in soup.find_all(True):
@@ -71,8 +72,9 @@ else:
                 errors.append(('assets/search-data.json', image, 'missing search entry image'))
 
 for runtime in ('assets/static.js', 'assets/requests.js', 'assets/search.js', 'assets/static.css',
-                'assets/form-config.js', 'assets/formspree.js'):
+                'assets/form-config.js', 'assets/formspree.js', 'assets/store.js', 'assets/store-core.js',
+                'assets/store.css', 'assets/store-data.json', 'basket/index.html', 'checkout/index.html'):
     if not (root / runtime).exists():
         errors.append((runtime, 'file', 'missing static runtime dependency'))
-print(json.dumps({'pages': len(manifest['pages']), 'assets': len(manifest['assets']), 'references_checked': checked, 'errors': errors}, indent=2))
+print(json.dumps({'pages': len(pages), 'assets': len(manifest['assets']), 'references_checked': checked, 'errors': errors}, indent=2))
 raise SystemExit(bool(errors))

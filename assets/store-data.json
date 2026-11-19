@@ -1,0 +1,3054 @@
+{
+  "generatedAt": "2026-11-19",
+  "source": {
+    "catalog": "proteins/index.html",
+    "prices": "order/index.html",
+    "priceNote": "Published order options; final price and availability require confirmation."
+  },
+  "products": [
+    {
+      "id": "r1-001-1",
+      "sku": "R1-001-1",
+      "name": "PD-1 ECD (25-167) (Fc-tag)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-001-1a",
+      "sku": "R1-001-1a",
+      "name": "PD-1 ECD (25-167) (Tag free)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-001-2",
+      "sku": "R1-001-2",
+      "name": "PD-1 PD-1 ECD (25-167) (His-tag, Fc-tag)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-2-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-001-2a",
+      "sku": "R1-001-2a",
+      "name": "PD-1 ECD (25-167) (His-tag)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-2a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-2a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-001-3",
+      "sku": "R1-001-3",
+      "name": "PD-1 ECD (25-167) (Tag free)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-3-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-3-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-3-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-3-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-001-4",
+      "sku": "R1-001-4",
+      "name": "PD-1 ECD (34-150) (Tag free)",
+      "path": "/proteins/programmed-cell-death-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-001-4-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-4-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-4-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-001-4-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-002-1a",
+      "sku": "R1-002-1A",
+      "name": "PD-L1 ECD (19 – 238) (His-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-1/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-002-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-002-3",
+      "sku": "R1-002-3",
+      "name": "PD-L1 ECD (19 – 134) (His-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-1/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-002-3-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-3-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-3-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-002-3-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-003-1",
+      "sku": "R1-003-1",
+      "name": "PD-L2 ECD (20 – 219) (His-tag, Fc-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-003-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-003-1a",
+      "sku": "R1-003-1a",
+      "name": "PD-L2 ECD (20 – 219) (His-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-003-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-003-2",
+      "sku": "R1-003-2",
+      "name": "PD-L2 ECD (20 – 219) (Fc-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-003-2-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-003-2a",
+      "sku": "R1-003-2a",
+      "name": "PD-L2 ECD (20 – 219) (Tag free)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-003-2a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-003-2a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-004-1",
+      "sku": "R1-004-1",
+      "name": "CTLA-4 ECD (37 – 162) (Fc-tag)",
+      "path": "/proteins/cytotoxic-t-lymphocyte-protein-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-004-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-004-1a",
+      "sku": "R1-004-1a",
+      "name": "CTLA-4 ECD (37 – 162) (Tag free)",
+      "path": "/proteins/cytotoxic-t-lymphocyte-protein-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-004-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-004-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-005-1",
+      "sku": "R1-005-1",
+      "name": "CD86 ECD (26 – 247) (His-tag, Fc-tag)",
+      "path": "/proteins/t-lymphocyte-activation-antigen-cd86/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-005-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-005-1a",
+      "sku": "R1-005-1a",
+      "name": "CD86 ECD (26 – 247) (His-tag)",
+      "path": "/proteins/t-lymphocyte-activation-antigen-cd86/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-005-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-005-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-006-1",
+      "sku": "R1-006-1",
+      "name": "CD80 ECD (35 - 242) (His-tag, Fc-tag)",
+      "path": "/proteins/t-lymphocyte-activation-antigen-cd80/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-006-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-006-1a",
+      "sku": "R1-006-1a",
+      "name": "CD80 ECD (35 - 242) (His-tag)",
+      "path": "/proteins/t-lymphocyte-activation-antigen-cd80/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-006-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-006-2a",
+      "sku": "R1-006-2a",
+      "name": "CD80 for crystallization (Tag free)",
+      "path": "/proteins/t-lymphocyte-activation-antigen-cd80/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-006-2a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-2a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-2a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-006-2a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-007-1",
+      "sku": "R1-007-1",
+      "name": "CD28 ECD (19-152) (Fc-tag)",
+      "path": "/proteins/t-cell-specific-surface-glycoprotein-cd28/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-007-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-007-1a",
+      "sku": "R1-007-1a",
+      "name": "CD28 ECD (19-152) (Tag free)",
+      "path": "/proteins/t-cell-specific-surface-glycoprotein-cd28/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-007-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-007-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-009-1",
+      "sku": "R1-009-1",
+      "name": "CD48 ECD (27-220) (His-tag, Fc-tag)",
+      "path": "/proteins/cd48-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-009-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-009-1a",
+      "sku": "R1-009-1a",
+      "name": "CD48 ECD (27-220) (His-tag)",
+      "path": "/proteins/cd48-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-009-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-009-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-011-1",
+      "sku": "R1-011-1",
+      "name": "TIM-3 ECD (22 - 200) (Fc-tag)",
+      "path": "/proteins/t-cell-immunoglobulin-mucin-receptor-3/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-011-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-011-1a",
+      "sku": "R1-011-1a",
+      "name": "TIM-3 ECD (22 - 200) (Tag free)",
+      "path": "/proteins/t-cell-immunoglobulin-mucin-receptor-3/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-011-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-011-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-012-1",
+      "sku": "R1-012-1",
+      "name": "HVEM ECD (39 - 202) (His-tag, Fc-tag)",
+      "path": "/proteins/herpes-virus-entry-mediator-a/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-012-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-012-1a",
+      "sku": "R1-012-1a",
+      "name": "HVEM ECD (39 - 202) (His-tag)",
+      "path": "/proteins/herpes-virus-entry-mediator-a/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-012-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-012-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-013-1",
+      "sku": "R1-013-1",
+      "name": "BTLA ECD (31 - 157) (Fc-tag)",
+      "path": "/proteins/b-and-t-lymphocyte-attenuator/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-013-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-013-1a",
+      "sku": "R1-013-1a",
+      "name": "BTLA ECD (31 - 157) (Tag free)",
+      "path": "/proteins/b-and-t-lymphocyte-attenuator/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-013-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-013-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-014-1",
+      "sku": "R1-014-1",
+      "name": "CD160 ECD (27 - 159) (Fc-tag)",
+      "path": "/proteins/cd160-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-014-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-014-1a",
+      "sku": "R1-014-1a",
+      "name": "CD160 ECD (27 - 159) (Tag free)",
+      "path": "/proteins/cd160-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-014-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-014-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-015-1",
+      "sku": "R1-015-1",
+      "name": "LAG-3 ECD (23-450) (Fc-tag)",
+      "path": "/proteins/lymphocyte-activation-gene-3-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-015-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-015-1a",
+      "sku": "R1-015-1a",
+      "name": "LAG-3 ECD (23-450) (Tag free)",
+      "path": "/proteins/lymphocyte-activation-gene-3-protein/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-015-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-015-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-016-1",
+      "sku": "R1-016-1",
+      "name": "B7-H4 ECD (29 - 258) (His-tag, Fc-tag)",
+      "path": "/proteins/v-set-domain-containing-t-cell-activation-inhibitor-1/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-016-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-016-1a",
+      "sku": "R1-016-1a",
+      "name": "B7-H4 ECD (29 - 258) (His-tag)",
+      "path": "/proteins/v-set-domain-containing-t-cell-activation-inhibitor-1/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-016-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-016-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-017-1",
+      "sku": "R1-017-1",
+      "name": "B7-H3 ECD (29 - 461) (His-tag, Fc-tag)",
+      "path": "/proteins/cd276-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-017-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-017-1a",
+      "sku": "R1-017-1a",
+      "name": "B7-H3 ECD (29 - 461) (His-tag)",
+      "path": "/proteins/cd276-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-017-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-017-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-019-1",
+      "sku": "R1-019-1",
+      "name": "ICOS ECD (21 - 140) (Fc-tag)",
+      "path": "/proteins/inducible-t-cell-costimulator/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-019-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-019-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-019-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-019-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-020-1",
+      "sku": "R1-020-1",
+      "name": "ICOSL ECD (19-256) (His-tag, Fc-tag)",
+      "path": "/proteins/inducible-t-cell-costimulator-ligand/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-020-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-020-1a",
+      "sku": "R1-020-1a",
+      "name": "ICOSL ECD (19-256) (His-tag)",
+      "path": "/proteins/inducible-t-cell-costimulator-ligand/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-020-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-020-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-022-1",
+      "sku": "R1-022-1",
+      "name": "TMIGD2 ECD (23-150) (Fc-tag)",
+      "path": "/proteins/transmembrane-and-immunoglobulin-domain-containing-protein-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-022-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-022-1a",
+      "sku": "R1-022-1a",
+      "name": "TMIGD2 ECD (23-150) (Tag free)",
+      "path": "/proteins/transmembrane-and-immunoglobulin-domain-containing-protein-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-022-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-022-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-023-1",
+      "sku": "R1-023-1",
+      "name": "CD70 ECD (39-193) (His-tag, Fc-tag)",
+      "path": "/proteins/cd70-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-023-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-023-1a",
+      "sku": "R1-023-1a",
+      "name": "CD70 ECD (39-193) (His-tag)",
+      "path": "/proteins/cd70-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-023-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-023-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-024-1",
+      "sku": "R1-024-1",
+      "name": "CD27 ECD (21-191) (Fc-tag)",
+      "path": "/proteins/cd27-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-024-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-024-1a",
+      "sku": "R1-024-1a",
+      "name": "CD27 ECD (21-191) (Tag free)",
+      "path": "/proteins/cd27-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-024-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-024-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-025-1",
+      "sku": "R1-025-1",
+      "name": "OX40 ECD (29-214) (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-025-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-025-1a",
+      "sku": "R1-025-1a",
+      "name": "OX40 ECD (29-214) (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-025-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-025-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-026-1",
+      "sku": "R1-026-1",
+      "name": "OX40L ECD (51-183) (His-tag, Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-026-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-026-1a",
+      "sku": "R1-026-1a",
+      "name": "OX40L ECD (51-183) (His-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-4/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-026-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-026-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-027-1",
+      "sku": "R1-027-1",
+      "name": "4-1BB ECD (24-186) (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-9/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-027-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-027-1a",
+      "sku": "R1-027-1a",
+      "name": "4-1BB ECD (24-186) (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-9/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-027-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-027-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-028-1",
+      "sku": "R1-028-1",
+      "name": "4-1BBL ECD (50-254) (His-tag, Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-9/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-028-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-028-1a",
+      "sku": "R1-028-1a",
+      "name": "4-1BBL ECD (50-254) (His-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-9/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-028-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-028-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-029-1",
+      "sku": "R1-029-1",
+      "name": "GITR ECD (26-161) (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-18-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-029-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-029-1a",
+      "sku": "R1-029-1a",
+      "name": "GITR ECD (26-161) (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-18-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-029-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-029-2",
+      "sku": "R1-029-2",
+      "name": "GITR ECD Monomer (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-18-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-029-2-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-029-2a",
+      "sku": "R1-029-2a",
+      "name": "GITR ECD Monomer (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-18-2/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-029-2a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-029-2a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-030-1",
+      "sku": "R1-030-1",
+      "name": "GITRL ECD (50-177) (His-tag, Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-18/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-030-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-030-1a",
+      "sku": "R1-030-1a",
+      "name": "GITRL ECD (50-177) (His-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-18/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-030-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-030-2",
+      "sku": "R1-030-2",
+      "name": "GITRL ECD (50-177) (His-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-18/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-030-2-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-2-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-2-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-2-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-030-3",
+      "sku": "R1-030-3",
+      "name": "GITR/GITRL complex (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-18/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-030-3-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-3-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-3-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-030-3-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-033-1",
+      "sku": "R1-033-1",
+      "name": "CD40 ECD (22-193) (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-5/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-033-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-033-1a",
+      "sku": "R1-033-1a",
+      "name": "CD40 ECD (22-193) (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-receptor-superfamily-member-5/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-033-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-033-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-034-1",
+      "sku": "R1-034-1",
+      "name": "CD40L ECD (47-261) (His-tag, Fc-tag)",
+      "path": "/proteins/cd40-ligand/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-034-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-034-1a",
+      "sku": "R1-034-1a",
+      "name": "CD40L ECD (47-261) (His-tag)",
+      "path": "/proteins/cd40-ligand/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-034-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-034-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-036-1",
+      "sku": "R1-036-1",
+      "name": "LIGHT ECD (74-210) (Fc-tag)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-14/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-036-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-036-1a",
+      "sku": "R1-036-1a",
+      "name": "LIGHT ECD (74-210) (Tag free)",
+      "path": "/proteins/tumor-necrosis-factor-ligand-superfamily-member-14/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-036-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-036-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-040-1",
+      "sku": "R1-040-1",
+      "name": "KIR3DL3 ECD (26-322) (Fc-tag)",
+      "path": "/proteins/killer-cell-immunoglobulin-like-receptor-three-ig-domains-and-long-cytoplasmic-tail-3/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-040-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-040-1a",
+      "sku": "R1-040-1a",
+      "name": "KIR3DL3 ECD (26-322) (Tag free)",
+      "path": "/proteins/killer-cell-immunoglobulin-like-receptor-three-ig-domains-and-long-cytoplasmic-tail-3/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-040-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-040-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-041-2",
+      "sku": "R1-041-2",
+      "name": "CD82 (1-267) (StrepTag)",
+      "path": "/proteins/cd82-antigen/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-041-2-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-041-2-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-041-2-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-041-2-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-043-1",
+      "sku": "R1-043-1",
+      "name": "LTBR ECD (31-227) (Fc-tag)",
+      "path": "/proteins/lymphotoxin-beta-receptor/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-043-1-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-043-1a",
+      "sku": "R1-043-1a",
+      "name": "LTBR ECD (31-227) (Tag free)",
+      "path": "/proteins/lymphotoxin-beta-receptor/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-043-1a-100-ug-solution",
+          "size": "100 µg",
+          "formulation": "Solution",
+          "priceCents": 15000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1a-500-ug-solution",
+          "size": "500 µg",
+          "formulation": "Solution",
+          "priceCents": 75000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1a-1-mg-solution",
+          "size": "1 mg",
+          "formulation": "Solution",
+          "priceCents": 150000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        },
+        {
+          "id": "r1-043-1a-2-mg-solution",
+          "size": "2 mg",
+          "formulation": "Solution",
+          "priceCents": 200000,
+          "quoteRequired": false,
+          "source": "order/index.html"
+        }
+      ]
+    },
+    {
+      "id": "r1-043-2",
+      "sku": "R1-043-2",
+      "name": "LTBR Unglycosylated (Fc-tag)",
+      "path": "/proteins/lymphotoxin-beta-receptor/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-043-2-quote",
+          "size": "Size to be confirmed",
+          "formulation": "To be confirmed",
+          "priceCents": null,
+          "quoteRequired": true,
+          "source": "/proteins/lymphotoxin-beta-receptor/"
+        }
+      ]
+    },
+    {
+      "id": "r1-043-2a",
+      "sku": "R1-043-2a",
+      "name": "LTBR Unglycosylated (Tag free)",
+      "path": "/proteins/lymphotoxin-beta-receptor/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r1-043-2a-quote",
+          "size": "Size to be confirmed",
+          "formulation": "To be confirmed",
+          "priceCents": null,
+          "quoteRequired": true,
+          "source": "/proteins/lymphotoxin-beta-receptor/"
+        }
+      ]
+    },
+    {
+      "id": "r2-002-1",
+      "sku": "R2-002-1",
+      "name": "PD-L1 ECD (19 – 238) (His-tag, Fc-tag)",
+      "path": "/proteins/programmed-cell-death-protein-1-ligand-1/",
+      "image": "/wp-content/uploads/2020/02/logo.png",
+      "options": [
+        {
+          "id": "r2-002-1-quote",
+          "size": "Size to be confirmed",
+          "formulation": "To be confirmed",
+          "priceCents": null,
+          "quoteRequired": true,
+          "source": "/proteins/programmed-cell-death-protein-1-ligand-1/"
+        }
+      ]
+    }
+  ]
+}

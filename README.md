@@ -10,10 +10,12 @@ Publish from the `main` branch, repository root. `.nojekyll` preserves the origi
 
 ## Working features
 
+- Store controls on catalog/product pages, pack-size selection, persistent basket, editable quantities, and basket checkout without payment. `/order/` opens the same checkout; existing product query links open a selection dialog.
+- Published order-option prices are estimates. Products missing from the captured order list require a quote. Shipping, taxes, availability and final pricing are confirmed manually. Basket storage contains identifiers/quantities only; checkout personal details are saved only if the visitor explicitly saves a draft.
+- Checkout reviews the full basket, contact and shipping details before Formspree submission. Failed sending preserves the basket; successful sending clears submitted quantities while retaining items added elsewhere.
 - Product search, catalog-number/alphabetical sorting, tag/expression-host/origin filters, and Clear filters. Query parameters preserve selections across reloads.
 - Full-text search across the captured site, with product/article/page scopes. Article search includes body text and verified tags; archive and tag navigation stays local.
 - Product-table Order buttons preselect the catalog entry. Entries missing from the old order dropdown remain available as requests for confirmation.
-- Three-step order form with Back/Next, up to four products, removable extra products, required fields, and positive whole-number quantities.
 - Contact and order request review, correctly encoded email drafts, clipboard copy, and downloadable UTF-8 text files. Without a Formspree endpoint, visitors send the request from their own email app; the default fallback inbox is `contact@fusiomica.com`. Configuring Formspree adds explicit online sending after review.
 - Optional Save/Load/Delete draft buttons. Personal details are stored in this browser's local storage only when Save is clicked. Deleting a saved draft leaves the current form intact.
 - Responsive navigation, catalog filters, request controls, and site search on mobile.
@@ -33,6 +35,12 @@ Notification delivery and submission limits are managed by Formspree. An accepte
 ```sh
 node --test tests/formspree.test.mjs
 ```
+
+## Cloudflare deployment
+
+The existing Cloudflare Worker is `recepton-biotech-site`. Its Git integration uses the `main` branch and `npx wrangler deploy`, with no build command. `wrangler.jsonc` serves the repository's public static files; `.assetsignore` excludes source captures, tests and development files. Static asset requests do not need a Worker script.
+
+For a direct dashboard folder upload, run `python3 scripts/build-site.py` and upload `output/cloudflare-store`. For CLI deployment, authenticate Wrangler and run `npx wrangler deploy`. Run `python scripts/build-store.py` after catalog/order-option changes, and `node --test tests/*.test.mjs` to check basket and transport behavior.
 
 ## Limits
 

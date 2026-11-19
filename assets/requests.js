@@ -147,10 +147,12 @@ export function requestTools(form, order = false) {
         send.disabled = true;
         send.textContent = 'Sending…';
         feedback.textContent = 'Sending your request…';
+        form.dispatchEvent(new CustomEvent('recepton:request-started'));
         const frozen = [...fields, ...draftBar.querySelectorAll('button'), ...form.querySelectorAll('[type=submit]')].filter(field => !field.disabled);
         frozen.forEach(field => { field.disabled = true; });
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 20000);
+        let accepted = false;
         try {
           const result = await submitRequest(formConfig.endpoint, {
             email: senderEmail, name: senderName, subject, message: body,
@@ -158,6 +160,7 @@ export function requestTools(form, order = false) {
           }, controller.signal);
           feedback.textContent = result.message;
           if (result.ok) {
+            accepted = true;
             submitted.add(body);
             help.textContent = 'Request submitted. Copy or download it below for your records.';
             email.hidden = true;
@@ -169,6 +172,8 @@ export function requestTools(form, order = false) {
           send.disabled = submitted.has(body);
           send.textContent = send.disabled ? 'Submitted' : 'Send request';
         }
+        if (accepted) form.dispatchEvent(new CustomEvent('recepton:request-submitted'));
+        form.dispatchEvent(new CustomEvent('recepton:request-finished', { detail: { ok: accepted } }));
       });
       send.className = 'static-primary';
       send.dataset.onlineSend = '';

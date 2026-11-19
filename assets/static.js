@@ -170,8 +170,8 @@
   }
 
   async function init() {
-    const [{ requestTools }, search] = await Promise.all([
-      import(new URL('assets/requests.js', root)), import(new URL('assets/search.js', root))
+    const [{ requestTools }, search, store] = await Promise.all([
+      import(new URL('assets/requests.js', root)), import(new URL('assets/search.js', root)), import(new URL('assets/store.js', root))
     ]);
     document.querySelectorAll('form[data-static-form]').forEach(form => {
       if (form.elements.namedItem('full_product_name')) catalog(form);
@@ -192,6 +192,11 @@
       link.href = target;
     });
     search.setupSiteSearch();
+    try { await store.setupStore(root, requestTools); }
+    catch {
+      const mount = document.querySelector('[data-store-page]');
+      if (mount) notice(mount, 'Basket could not be loaded. Reload this page, or contact us to place an order request.');
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

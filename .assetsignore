@@ -1,0 +1,16 @@
+.git/
+.github/
+.agents/
+.codex/
+sources/
+output/
+scripts/
+tests/
+docs/
+README.md
+wrangler.jsonc
+.assetsignore
+.gitignore
+.nojekyll
+.DS_Store
+.playwright-cli/
